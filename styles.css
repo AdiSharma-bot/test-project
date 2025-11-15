@@ -1460,9 +1460,4 @@ footer#quote-footer {
 button {
   transition: all 300ms ease-in;
 }
-button:hover {
-}
 
-/* Active (pressed) effect */
-button:active {
-}
