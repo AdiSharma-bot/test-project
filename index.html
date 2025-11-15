@@ -4,93 +4,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script src="main.js" defer></script>
     <title>Super feedy</title>
   </head>
   <body>
     <header class="site-header">
       <nav>
-        <h1><img src="" alt="" /></h1>
+        <h1><img src="assets/brand-image.png" alt="super feedy" /></h1>
         <ul>
-          <li><a href="http://">Home</a></li>
-          <li><a href="http://">Shop Range</a></li>
-          <li><a href="http://">Reviews</a></li>
-          <li><a href="http://">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop-range">Shop Range</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
         <ul class="nav-icons">
-          <li>Account icon</li>
-          <li>Shop icon</li>
-          <li>Search icon</li>
+          <li><img src="assets/icons/Shape.png" alt="Search Icon" /></li>
+          <li>
+            <img
+              src="assets/icons/shopping-bag 1.png"
+              alt="Shopping bag icon"
+            />
+          </li>
+          <li><img src="assets/icons/user.png" alt="User icon" /></li>
         </ul>
       </nav>
     </header>
-    <main class="site-main-content">
-      <section class="introduction">
-        <h2>The Only Bowl That Solves Every Mealtime Problem</h2>
-        <p>
-          Trusted by 20,000+ pet parents. Voted Best Slow Feeder (2024 & 2025).
-          Designed in Australia
-        </p>
-        <button type="button" class="shop-btn1">Shop Now</button>
+    <main class="site-main-content" id="home" >
+      <section class="introduction" data-aos="fade-up">
         <article>
-          <ul class="feature-list-strip">
-            <li>Australian Owned</li>
-            <li>1,600+ 5-Star Reviews</li>
-            <li>Vet Recommended</li>
-            <li>Pet Innovation Winner</li>
-          </ul>
+          <h2>The Only Bowl That Solves Every Mealtime Problem</h2>
+          <p>
+            Trusted by 20,000+ pet parents. Voted Best Slow Feeder (2024 &
+            2025). Designed in Australia
+          </p>
+          <button type="button" class="shop-btn1">Shop Now</button>
         </article>
+        <ul class="feature-list-strip">
+          <li>Australian Owned</li>
+          <li>1,600+ 5-Star Reviews</li>
+          <li>Vet Recommended</li>
+          <li>Pet Innovation Winner</li>
+        </ul>
+        <div class="intro-image-container">
+          <img
+            src="assets/dog-with-product.png"
+            alt="dog image"
+            class="intro-dog-image"
+          />
+          <img src="assets/image-border-pic.png" alt="" />
+          <div class="short-review-card">
+            <p>4.8/5 on JudgeMe from 1600+</p>
+            <img src="assets/review-stars.png" alt="5 star reviews" />
+            <p>Verified Reviews</p>
+          </div>
+        </div>
       </section>
       <section class="featurings-and-quotes">
-        <article class="featurings">
-          <h3>As featured in</h3>
+        <article class="featurings" data-aos="fade-right">
+          <h4><span>As featured in</span></h4>
           <div class="feature-images-container">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <img src="assets/features/love-dogs.svg" alt="I love dogs image" />
+            <img
+              src="assets/features/vanity-fair.svg"
+              alt="vanity fair brand image"
+            />
+            <img
+              src="assets/features/british-vogue.svg"
+              alt="british vogue brand image"
+            />
+            <img
+              src="assets/features/7-news-central.svg"
+              alt="7 news central image"
+            />
+            <img
+              src="assets/features/canine.svg"
+              alt="canine-arthritis brand image"
+            />
           </div>
         </article>
-        <article class="quote-carousel">
+        <article class="quote-carousel" data-aos="fade-down">
           <h3>Media & Expert Quote Carousel</h3>
           <div class="carousel-container">
-            <button type="button" class="left-arrow">Left Arrow</button>
-            <div class="carousel-1">
-              <img src="" alt="" />
-              <p>
-                Its multifunctional design makes it a valuable addition to any
-                pet owner's collection, offering both practicality and
-                interactive features - iHeartDogs
-              </p>
+            <button type="button" class="left-arrow" data-carousel-btn="prev">
+              <
+            </button>
+            <div id="carousel-container2">
+              <ul class="carousel-track">
+                <li class="carousel-1">
+                  <img src="assets/features/love-dogs.svg" alt="" />
+                  <p>
+                    Its multifunctional design makes it a valuable addition to
+                    any pet owner's collection, offering both practicality and
+                    interactive features <span>- iHeartDogs</span>
+                  </p>
+                </li>
+                <li class="carousel-2 scale">
+                  <img src="assets/features/vanity-fair.svg" alt="" />
+                  <p>
+                    A smart investment for modern pet families - elegant,
+                    practical, and thoroughly vet-backed
+                    <span>- Vanity Fair</span>
+                  </p>
+                </li>
+                <li class="carousel-3">
+                  <img src="assets/features/british-vogue.svg" alt="" />
+                  <p>
+                    A revolutionary all-in-one slow feeder and travel bowl,
+                    redefining canine dining <span>- British Vogue</span>
+                  </p>
+                </li>
+                <li class="carousel-4">
+                  <img src="assets/features/7-news-central.svg" alt="" />
+                  <p>
+                    The dog bowl has been labelled the 'best quality slow feeder
+                    bowl ever' <span>- Channel 7 News</span>
+                  </p>
+                </li>
+              </ul>
             </div>
-            <div class="carousel-2">
-              <img src="" alt="" />
-              <p>
-                A smart investment for modern pet families - elegant, practical,
-                and thoroughly vet-backed - Vanity Fair
-              </p>
-            </div>
-            <div class="carousel-3">
-              <img src="" alt="" />
-              <p>
-                A revolutionary all-in-one slow feeder and travel bowl,
-                redefining canine dining - British Vogue
-              </p>
-            </div>
-            <div class="carousel-4">
-              <img src="" alt="" />
-              <p>
-                The dog bowl has been labelled the 'best quality slow feeder
-                bowl ever' - Channel 7 News
-              </p>
-            </div>
-            <button type="button" class="right-arrow">Right Arrow</button>
+            <button type="button" class="right-arrow" data-carousel-btn="next">
+              >
+            </button>
           </div>
         </article>
       </section>
       <section class="features-part">
-        <article>
+        <article class="features-1" data-aos="fade-up-left">
           <div class="content">
             <h4>Tired of Mealtime Anxiety and Disappointing Slow Feeders ?</h4>
             <ul>
@@ -110,12 +156,18 @@
             </ul>
           </div>
           <div>
-            <img src="" alt="" />
+            <img
+              src="assets/black-dog-with-product.svg"
+              alt="Black dog with product"
+            />
           </div>
         </article>
-        <article>
+        <article class="features-2" id="shop-range" data-aos="fade-up-right">
           <div>
-            <img src="" alt="" />
+            <img
+              src="assets/product-with-food.svg"
+              alt="Product with food inside it "
+            />
           </div>
           <div class="content-2">
             <h4>Engineered to Solve Every Mealtime Problem</h4>
@@ -144,8 +196,8 @@
         <button type="button">Shop Now</button>
       </section>
       <section class="comparison-and-fast-faq">
-        <article class="comparison-part">
-          <h4>Ordinary Bowls vs. Super Feedy</h4>
+        <h4>Ordinary Bowls vs. Super Feedy</h4>
+        <article class="comparison-part" data-aos="fade-up">
           <ul class="comparison-box1">
             <li><strong>Ordinary Bowls</strong></li>
             <li>Dangerous gulping</li>
@@ -166,8 +218,9 @@
         <button type="button">SHOP the Bowl Built for Real Life</button>
       </section>
       <section class="fast-answers">
-        <articles class="small-faq">
-          <details>
+        <h4>Still wondering? Get Answers Fast:</h4>
+        <article class="small-faq" data-aos="fade-right">
+          <details open>
             <summary>Will it frustrate my dog?</summary>
             <p>
               No, Super Feedy is designed for natural, stress-free slow feeding.
@@ -185,54 +238,62 @@
             <summary>What if it's not right for us?</summary>
             <p>I guess we'll never know</p>
           </details>
-          <p>
-            <span>Important:</span>Not recommended for brachycephalic
+          <p class="important-note">
+            <span>Important:</span>Not recommended for brachycephalic<br />
             (flat-faced) breeds
           </p>
-        </articles>
-        <img src="" alt="" />
-      </section>
-      <section class="doctor-testament">
-        <article class="short-features-container">
-          <ul>
-            <li>Vet Approved Design</li>
-            <li>10 Cup Capacity- Built for Bigger Dogs</li>
-            <li>Suction Base to Eliminate Mess</li>
-            <li>Dishwasher Safe + Travel Friendly</li>
-          </ul>
         </article>
-        <div class="video-container">
-          <img src="" alt="" />
+        <div class="white-dog-pic-container" data-aos="fade-left">
+          <img src="assets/white-dog.svg" alt="White dog with product" />
         </div>
-        <blockquote>
-          <p>
-            It's one of the few feeding solutions I've seen that's both
-            thoughtfully designed and truly effective for dogs and their owners
-          </p>
-          <footer>
-            Dr. Phillip Sacks, Veterinarian & Academic, Burwood Vet Hospital
-          </footer>
-          <button class="shop-btn2">Shop now</button>
-        </blockquote>
+      </section>
+      <section class="doctor-testament" data-aos="fade-down">
+        <h4>
+          Recommended by Vets. <span>Loved by Dogs. </span>Built by Dog Parents.
+        </h4>
+        <div class="container-1">
+          <article class="short-features-container">
+            <ul>
+              <li>Vet Approved Design</li>
+              <li>10 Cup Capacity- Built for Bigger Dogs</li>
+              <li>Suction Base to Eliminate Mess</li>
+              <li>Dishwasher Safe + Travel Friendly</li>
+            </ul>
+          </article>
+          <div class="video-container">
+            <img src="assets/doctor-philip.svg" alt="" />
+          </div>
+          <blockquote>
+            <p>
+              It's one of the few feeding solutions I've seen that's both
+              thoughtfully designed and truly effective for dogs and their
+              owners.
+            </p>
+            <footer id="quote-footer">
+              Dr. Phillip Sacks, Veterinarian & Academic, Burwood Vet Hospital
+            </footer>
+            <button class="shop-btn2">Shop now</button>
+          </blockquote>
+        </div>
       </section>
       <section class="survey-data">
         <h5>Real Results from Verified Customers & Survey Data</h5>
         <article class="data">
-          <div class="first-percent">
+          <div class="first-percent" data-aos="fade-right">
             <p>92%</p>
             <p>saw calmer, slower, safer eating within days</p>
           </div>
-          <div class="second-percent">
+          <div class="second-percent" data-aos="zoom-in">
             <p>95%</p>
             <p>say it stands up to power chewers</p>
           </div>
-          <div class="third-percent">
+          <div class="third-percent" data-aos="fade-left">
             <p>94%</p>
             <p>called it the “best slow feeder they've ever used</p>
           </div>
         </article>
-        <article class="cards">
-          <div class="first-card">
+        <article class="cards" id="reviews">
+          <div class="first-card" data-aos="fade-right">
             <p>
               I used to hover over my dog, terrified he'd choke. Now he eats
               calmly and safely. It's given me a peace of mind I didn't think
@@ -240,14 +301,14 @@
             </p>
             <p>Sarah J.</p>
           </div>
-          <div class="second-card">
+          <div class="second-card" data-aos="zoom-in">
             <p>
               Tried other slow feeders; all cracked or were too small. Super
               Feedy works—no daily mess.
             </p>
             <p>Brandon L.</p>
           </div>
-          <div class="third-card">
+          <div class="third-card" data-aos="fade-left">
             <p>
               anxious rescue eats relaxed- and we finally enjoy dinner time, too
             </p>
@@ -257,145 +318,172 @@
       </section>
       <section class="working">
         <h4>How It Works</h4>
-        <article class="working-steps">
-          <img src="" alt="" />
+        <article class="working-steps" data-aos="fade-left">
+          <div class="image-container">
+            <img src="assets/product-image.svg" alt="Product Image" />
+          </div>
           <ul class="steps">
-            <h5>Calm Meals in 3 Steps</h5>
+            <li><h5>Calm Meals in 3 Steps</h5></li>
             <li>
               <strong>Prep & Portion</strong><br />
               Add any food—no extra bowls.
             </li>
             <li>
-              <strong>Stick & Serve</strong>
+              <strong>Stick & Serve</strong><br />
               Anchor-Lock™ stays put, every meal.
             </li>
             <li>
-              <strong>Seal & Go</strong>
+              <strong>Seal & Go</strong><br />
               Snap the travel lid for storage or mealtime anywhere
             </li>
           </ul>
         </article>
       </section>
-      <section class="portfolio">
-        <article class="portfolio-pics">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+      <section class="portfolio" data-aos="zoom-in">
+        <h5>Portfolio</h5>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/light-brown-dog.svg" />
+            </div>
+            <div class="swiper-slide" >
+              <img src="assets/light-brown-dog.svg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/light-brown-dog.svg" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="brand-story" id="about">
+        <article class="story-content" data-aos="fade-left">
+          <h4>The Brand Story: Built by Dog Parents, for Dog Parents</h4>
+          <p>
+            Belle inhaled her meals in seconds. Marley wasn't far behind. Every
+            dinner felt like a race—and a risk. After every other slow feeder
+            failed us, we built Super Feedy:
+            <span>a safe, durable, 4-in-1 system</span> to protect dogs like
+            ours—and finally deliver peace of mind at dinner.
+          </p>
+          <ul>
+            <li>award winning</li>
+            <li>Vet Recommended</li>
+            <li>Australian Owned</li>
+          </ul>
+          <div class="dog-pic-container">
+            <img
+              src="assets/puppy-labrador-retriever.svg"
+              alt="White labrador retriever puppy"
+            />
+          </div>
         </article>
-        <div class="btns-container">
-          <button type="button"></button>
-          <button type="button"></button>
-          <button type="button"></button>
-        </div>
       </section>
-      <section class="brand-story">
-        <h4>The Brand Story: Built by Dog Parents, for Dog Parents</h4>
-        <p>
-          Belle inhaled her meals in seconds. Marley wasn't far behind. Every
-          dinner felt like a race—and a risk. After every other slow feeder
-          failed us, we built Super Feedy: a safe, durable, 4-in-1 system to
-          protect dogs like ours—and finally deliver peace of mind at dinner.
-        </p>
-        <div class="dog-pic-contain">
-          <img src="" alt="" />
-        </div>
-        <ul>
-          <li>award winning</li>
-          <li>Vet Recommended</li>
-          <li>Australian Owned</li>
-        </ul>
-      </section>
-      <section class="trust">
+      <section class="trust" data-aos="fade-right">
         <h4>The Last Slow Feeder You'll Ever Need - Or Your Money Back</h4>
         <ul>
-          <li>3-Year <span>Warranty</span></li>
+          <li>3-Year <br />Warranty</li>
           <li>30-Day Money-Back Guarantee</li>
           <li>Trusted by 1,600+ Dog Parents</li>
         </ul>
       </section>
       <section class="big-faq">
         <h5>Frequently Asked Questions</h5>
-        <dialog>
-          <summary>
-            Is Super Feedy safe for dogs who are power chewers or large breeds?
-          </summary>
-        </dialog>
-        <dialog>
-          <summary>
-            Can Super Feedy help prevent bloating or digestive issues in dogs?
+        <div class="bg-container"></div>
+        <div class="details-container" data-aos="fade-right">
+          <details>
+            <summary>
+              Is Super Feedy safe for dogs who are power chewers or large
+              breeds?
+            </summary>
+            <p>No idea mam! Contact us</p>
+          </details>
+          <details>
+            <summary>
+              Can Super Feedy help prevent bloating or digestive issues in dogs?
+            </summary>
             <p>Yes it definitely will</p>
-          </summary>
-        </dialog>
-        <dialog>
-          <summary>
-            Does the bowl work with both dry and wet/raw food diets?
-          </summary>
-          <p>Yes it does.</p>
-        </dialog>
-        <dialog>
-          <summary>
-            Will the suction base stick to textured or uneven surfaces?
-          </summary>
-          <p>Yes it will</p>
-        </dialog>
-        <dialog>
-          <summary>Is the lick mat microwave or freezer safe?</summary>
-          <p>No idea we don't have microwave and freezer safe.</p>
-        </dialog>
-        <dialog>
-          <summary>
-            How do I care for and wash Super Feedy for long-term use?
-          </summary>
-          <p>Use dishwasher efficiently</p>
-        </dialog>
+          </details>
+          <details>
+            <summary>
+              Does the bowl work with both dry and wet/raw food diets?
+            </summary>
+            <p>Yes it does.</p>
+          </details>
+          <details>
+            <summary>
+              Will the suction base stick to textured or uneven surfaces?
+            </summary>
+            <p>Yes it will</p>
+          </details>
+          <details>
+            <summary>Is the lick mat microwave or freezer safe?</summary>
+            <p>No idea we don't have microwave and freezer safe.</p>
+          </details>
+          <details>
+            <summary>
+              How do I care for and wash Super Feedy for long-term use?
+            </summary>
+            <p>Use dishwasher efficiently</p>
+          </details>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="site-footer">
       <h5>Get In Touch</h5>
-      <address>
-        <h6>Reach us</h6>
-        <p>Melbourne, Australia</p>
-        <p>hello@superfeedy.com</p>
-        <p>+61 457 585 995</p>
-        <img src="" alt="">
-      </address>
-      <ul class="information">
-        <h6>Information</h6>
-        <li>Shipping policy</li>
-        <li>Refund policy</li>
-        <li>FAQ</li>
-        <li>Privacy policy</li>
-        <li>Terms & Conditions</li>
-      </ul>
-      <ul class="about">
-        <h6>About</h6>
-        <li>Our Story</li>
-        <li>Reviews</li>
-        <li>About Dog Bloat</li>
-      </ul>
-      <ul class="more">
-        <h6>More</h6>
-        <li>Ambassadors</li>
-        <li>Blog</li>
-      </ul>
-      <ul class="10-off">
-        <h6>Get 10% Off</h6>
-        <li>Be Always On Time</li>
-        <li>With our offer</li>
-      </ul>
-      <form>
-        <label for="email-address">
-          <input type="email" id="email-address" name="email-add" placeholder="your email address" required>
-        </label>
-        <button>Sign up</button>
-      </form>
-      <ul class="socials">
-        <li>Icon 1</li>
-        <li>Icon 2</li>
-        <li>Icon 3</li>
-        <li>Icon 4</li>
-        <li>Icon 5</li>
-      </ul>
+      <article>
+        <address>
+          <h6>Reach us</h6>
+          <p>Melbourne, Australia</p>
+          <p>hello@superfeedy.com</p>
+          <p>+61 457 585 995</p>
+          <img src="" alt="" />
+        </address>
+        <ul class="information">
+          <li><strong>Information</strong></li>
+          <li>Shipping policy</li>
+          <li>Refund policy</li>
+          <li>FAQ</li>
+          <li>Privacy policy</li>
+          <li>Terms & Conditions</li>
+        </ul>
+        <ul class="about">
+          <li><strong>About</strong></li>
+          <li>Our Story</li>
+          <li>Reviews</li>
+          <li>About Dog Bloat</li>
+        </ul>
+        <ul class="more">
+          <li><strong>More</strong></li>
+          <li>Ambassadors</li>
+          <li>Blog</li>
+        </ul>
+        <form>
+          <label for="email-address">
+            <input
+              type="email"
+              id="email-address"
+              name="email-add"
+              placeholder="your email address"
+              required
+            />
+          </label>
+          <button>Sign up</button>
+        </form>
+        <ul class="10-percent">
+          <li><strong>Get 10% Off</strong></li>
+          <li>Be Always On Time</li>
+          <li>With our offer</li>
+        </ul>
+
+        <ul class="socials">
+          <li><img src="assets/icons/youtube.svg" alt="youtube" /></li>
+          <li><img src="assets/icons/pintrest.svg" alt="pintrest" /></li>
+          <li><img src="assets/icons/linkedin.png" alt="linkedin" /></li>
+          <li><img src="assets/icons/facebook.svg" alt="facebook" /></li>
+          <li><img src="assets/icons/instagram.svg" alt="instagram" /></li>
+        </ul>
+      </article>
     </footer>
   </body>
 </html>
